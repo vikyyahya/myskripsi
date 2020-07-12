@@ -942,14 +942,14 @@
     <script src="{{asset ('nembiz/lib/wow/wow.min.js')}}"></script>
     <script src="{{asset ('nembiz/lib/waypoints/waypoints.min.js')}}"></script>
     <script src="{{asset ('nembiz/lib/counterup/counterup.min.js')}}"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="{{asset ('newbiz/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/isotope/isotope.pkgd.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/lightbox/js/lightbox.min.js')}}"></script>
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
 
     <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    <script src="{{asset ('newbiz/js/main.js')}}"></script>
 
 </body>
 
