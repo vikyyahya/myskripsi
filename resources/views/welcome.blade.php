@@ -171,7 +171,7 @@
 
                 <div class="row about-extra">
                     <div class="col-lg-6 wow fadeInUp">
-                        <img src="img/about-extra-1.svg" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/about-extra-1.svg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
                         <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
