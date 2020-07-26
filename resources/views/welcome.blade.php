@@ -946,7 +946,7 @@
     <script src="{{asset ('newbiz/lib/isotope/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/lightbox/js/lightbox.min.js')}}"></script>
     <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
+    <script src="{{asset ('newbiz/contactform/contactform.js')}}"></script>
 
     <!-- Template Main Javascript File -->
     <script src="{{asset ('newbiz/js/main.js')}}"></script>
