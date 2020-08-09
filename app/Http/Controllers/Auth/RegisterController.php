@@ -29,7 +29,13 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+
+    protected function redirectTo()
+{
+    /* generate URL dynamicaly */
+    return '/home'; // return dynamicaly generated URL.
+}
 
     /**
      * Create a new controller instance.
@@ -68,7 +74,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'tlp' => $data['tlp'],
-            'level' => 2,
+            'level' => '2',
             'password' => Hash::make($data['password']),
         ]);
     }

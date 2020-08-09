@@ -630,7 +630,7 @@
 
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="member">
                             <img src="{{asset ('newbiz/img/order-1.jpeg')}}" class="img-fluid" alt="">
                             <div class="member-info">
@@ -648,7 +648,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
                             <img src="{{asset ('newbiz/img/order-2.jpeg')}}" class="img-fluid" alt="">
                             <div class="member-info">
@@ -666,7 +666,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
                             <img src="{{asset ('newbiz/img/order-3.jpeg')}}" class="img-fluid" alt="">
                             <div class="member-info">
