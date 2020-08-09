@@ -14,7 +14,7 @@
           <img src="{{asset ('lte3/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Viky Yahya</a>
+          <a href="#" class="d-block"> {{ Auth::user()->name }}</a>
         </div>
       </div>
 

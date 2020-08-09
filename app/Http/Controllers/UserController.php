@@ -14,11 +14,11 @@ class UserController extends Controller
         return view('user.user', ['users' => $users]);
     }
 
-    // public function user()
-    // {
-    //     $users = User::all();
-    //     return view('user.user', ['users' => $users]);
-    // }
+    public function add_user()
+    {
+        $users = User::all();
+        return view('user.user', ['users' => $users]);
+    }
 
 
 

@@ -58,7 +58,7 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
+                    <li><a href="#order">Order</a></li>
                     <!-- <li class="drop-down"><a href="">Drop Down</a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
@@ -108,7 +108,7 @@
             </div>
 
             <div class="intro-info">
-                <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+                <h2>We Always<br><span>Give Solutions</span><br>for your business!</h2>
                 <div>
                     <a href="#about" class="btn-get-started scrollto">Get Started</a>
                     <a href="#services" class="btn-services scrollto">Our Services</a>
@@ -165,7 +165,7 @@
                     </div>
 
                     <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-                        <img src="img/about-img.svg" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/about-img.svg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
 
@@ -190,7 +190,7 @@
 
                 <div class="row about-extra">
                     <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-                        <img src="img/about-extra-2.svg" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/about-extra-2.svg')}}" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
@@ -428,7 +428,7 @@
                                 <h4><a href="#">App 2</a></h4>
                                 <p>App</p>
                                 <div>
-                                    <a href="{{asset ('newbizimg/portfolio/app2.jpg')}}" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/app2.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -439,12 +439,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/portfolio/card2.jpg')}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4><a href="#">Card 2</a></h4>
                                 <p>Card</p>
                                 <div>
-                                    <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/card2.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -455,12 +455,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
-                            <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/portfolio/web2.jpg')}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4><a href="#">Web 2</a></h4>
                                 <p>Web</p>
                                 <div>
-                                    <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/web2.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -471,12 +471,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
-                            <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/portfolio/app3.jpg')}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4><a href="#">App 3</a></h4>
                                 <p>App</p>
                                 <div>
-                                    <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/app3.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -487,12 +487,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/portfolio/card1.jpg')}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4><a href="#">Card 1</a></h4>
                                 <p>Card</p>
                                 <div>
-                                    <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/card1.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -503,12 +503,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
-                            <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/portfolio/card3.jpg')}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4><a href="#">Card 3</a></h4>
                                 <p>Card</p>
                                 <div>
-                                    <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/card3.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -519,12 +519,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
-                            <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/portfolio/web1.jpg')}}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4><a href="#">Web 1</a></h4>
                                 <p>Web</p>
                                 <div>
-                                    <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio"
+                                    <a href="{{asset ('newbiz/img/portfolio/web1.jpg')}}" class="link-preview" data-lightbox="portfolio"
                                         data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
                                     <a href="#" class="link-details" title="More Details"><i
                                             class="ion ion-android-open"></i></a>
@@ -554,7 +554,7 @@
                         <div class="owl-carousel testimonials-carousel wow fadeInUp">
 
                             <div class="testimonial-item">
-                                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+                                <img src="{{asset ('newbiz/img/testimonial-1.jpg')}}" class="testimonial-img" alt="">
                                 <h3>Saul Goodman</h3>
                                 <h4>Ceo &amp; Founder</h4>
                                 <p>
@@ -565,7 +565,7 @@
                             </div>
 
                             <div class="testimonial-item">
-                                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+                                <img src="{{asset ('newbiz/img/testimonial-2.jpg')}}" class="testimonial-img" alt="">
                                 <h3>Sara Wilsson</h3>
                                 <h4>Designer</h4>
                                 <p>
@@ -576,7 +576,7 @@
                             </div>
 
                             <div class="testimonial-item">
-                                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+                                <img src="{{asset ('newbiz/img/testimonial-3.jpg')}}" class="testimonial-img" alt="">
                                 <h3>Jena Karlis</h3>
                                 <h4>Store Owner</h4>
                                 <p>
@@ -587,7 +587,7 @@
                             </div>
 
                             <div class="testimonial-item">
-                                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+                                <img src="{{asset ('newbiz/img/testimonial-4.jpg')}}" class="testimonial-img" alt="">
                                 <h3>Matt Brandon</h3>
                                 <h4>Freelancer</h4>
                                 <p>
@@ -598,7 +598,7 @@
                             </div>
 
                             <div class="testimonial-item">
-                                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+                                <img src="{{asset ('newbiz/img/testimonial-5.jpg')}}" class="testimonial-img" alt="">
                                 <h3>John Larson</h3>
                                 <h4>Entrepreneur</h4>
                                 <p>
@@ -618,12 +618,12 @@
         </section><!-- #testimonials -->
 
         <!--==========================
-      Team Section
+      Order Section
     ============================-->
-        <section id="team">
+        <section id="order">
             <div class="container">
                 <div class="section-header">
-                    <h3>Team</h3>
+                    <h3>Order</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                 </div>
 
@@ -631,7 +631,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="member">
-                            <img src="img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/team-1.jpg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Walter White</h4>
@@ -649,7 +649,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                            <img src="img/team-2.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/team-2.jpg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Sarah Jhonson</h4>
@@ -667,7 +667,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
-                            <img src="img/team-3.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/team-3.jpg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>William Anderson</h4>
@@ -685,7 +685,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="member">
-                            <img src="img/team-4.jpg" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/team-4.jpg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Amanda Jepson</h4>
@@ -704,7 +704,7 @@
                 </div>
 
             </div>
-        </section><!-- #team -->
+        </section><!-- #order -->
 
         <!--==========================
       Clients Section
@@ -723,49 +723,49 @@
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-1.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-1.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-2.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-2.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-3.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-3.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-4.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-4.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-5.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-5.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-6.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-6.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-7.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-7.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-xs-6">
                         <div class="client-logo">
-                            <img src="img/clients/client-8.png" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/clients/client-8.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
 
