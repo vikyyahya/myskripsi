@@ -183,7 +183,8 @@
                         <p>
                             Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
                             corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus
-                            quia sit. Porro rerum eum eum.
+                            quia sit. P
+                            orro rerum eum eum.
                         </p>
                     </div>
                 </div>
@@ -631,7 +632,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="member">
-                            <img src="{{asset ('newbiz/img/team-1.jpg')}}" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/order-1.jpeg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Walter White</h4>
@@ -649,7 +650,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                            <img src="{{asset ('newbiz/img/team-2.jpg')}}" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/order-2.jpeg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Sarah Jhonson</h4>
@@ -667,29 +668,11 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
-                            <img src="{{asset ('newbiz/img/team-3.jpg')}}" class="img-fluid" alt="">
+                            <img src="{{asset ('newbiz/img/order-3.jpeg')}}" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>William Anderson</h4>
                                     <span>CTO</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="member">
-                            <img src="{{asset ('newbiz/img/team-4.jpg')}}" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
                                     <div class="social">
                                         <a href=""><i class="fa fa-twitter"></i></a>
                                         <a href=""><i class="fa fa-facebook"></i></a>
