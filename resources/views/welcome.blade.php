@@ -80,7 +80,23 @@
 
                     @if (Route::has('login'))
                             @auth
-                               <li> <a href="{{ url('/home') }}">Dashboard</a></li>
+                                @if (Auth::user()->level == 1)
+                                    <li> <a href="{{ url('/home') }}">Dashboard</a></li>
+                                
+                                @endif
+
+                               <li class="nav-item dropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                  
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                            </li>
                             @else
                                <li> <a href="{{ route('login') }}">Login</a></li>
 
