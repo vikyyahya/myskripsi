@@ -24,3 +24,6 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 Route::get('/users', 'UserController@user');
 
+//design interior
+Route::get('/design-interior', 'DesignInteriorController@index');
+
