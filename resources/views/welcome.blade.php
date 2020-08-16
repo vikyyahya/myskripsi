@@ -126,9 +126,6 @@
             <div class="intro-info">
                 <h2>We Always<br><span>Give Solutions</span><br>for your business!</h2>
                 <div>
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                    <a href="#services" class="btn-services scrollto">Our Services</a>
-                </div>
             </div>
 
         </div>
@@ -632,14 +629,6 @@
                          </a>
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -653,14 +642,6 @@
                         </a>
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -673,14 +654,6 @@
                            </a>
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>CTO</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -700,8 +673,7 @@
 
                 <div class="section-header">
                     <h3>Our CLients</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere
-                        santome nida.</p>
+                    <p>Beberapa client kami yang mempercayakan berbagai project kepada kami.</p>
                 </div>
 
                 <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
