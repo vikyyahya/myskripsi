@@ -120,7 +120,7 @@
         <div class="container">
 
             <div class="intro-img">
-                <img src="{{asset ('newbiz/img/intro-img.svg')}}" alt="" class="img-fluid">
+                <img src="{{asset ('newbiz/img/intro-img.jpg')}}" alt="" class="img-fluid">
             </div>
 
             <div class="intro-info">
@@ -141,17 +141,16 @@
 
                 <header class="section-header">
                     <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p>Kami adalah tim desainer rumah dengan basic arsitektur. Berpengalaman sejak 2015,
+                    puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan.</p>
                 </header>
 
                 <div class="row about-container">
 
                     <div class="col-lg-6 content order-lg-1 order-2">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        Kebanyakan kami mengerjakan design interior dan perumahan serta perkantoran.
+                        Kosep pelayanan design kami adalah design yang berkualitas dengan harga yang terjangkau.
                         </p>
 
                         <div class="icon-box wow fadeInUp">
@@ -301,7 +300,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Estimasi Biaya Terjangkau</h5>
                                 <p class="card-text">Sebelum anda memilih order, anda akan ditampilkan estimasi biaya yang anda butuhkan,
-                                ini dapat membatun anda untuk mempersiapkan dana dengan hasil yang diinginkan.</p>
+                                ini dapat membatu anda untuk mempersiapkan dana dengan hasil yang diinginkan.</p>
                                 <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
@@ -323,8 +322,8 @@
                             <i class="fa fa-object-group"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Mengubah Design</h5>
-                                <p class="card-text">Perubahan dan revisi design sampai sesuai dengan impian pelanggan,
-                                adalah satu kepuasan kami bisa melayani dengan baik. </p>
+                                <p class="card-text">Gambar visualisasi itu sangat penting.
+                                karena dengan gambar visualisasi yang realistik anda dapat mengetahui seperti apa desain eksterior atau interior rumah anda.. </p>
                                 <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
