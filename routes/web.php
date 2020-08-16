@@ -27,3 +27,9 @@ Route::get('/users', 'UserController@user');
 //design interior
 Route::get('/design-interior', 'DesignInteriorController@index');
 
+//design exterior
+Route::get('/design-exterior', 'DesignExteriorController@index');
+
+//design exterior
+Route::get('/design-logo', 'DesignLogoController@index');
+
