@@ -627,7 +627,9 @@
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="member">
-                            <img src="{{asset ('newbiz/img/order-1.jpeg')}}" class="img-fluid" alt="">
+                        <a href="/design-exterior">
+                        <img src="{{asset ('newbiz/img/order-1.jpeg')}}" class="img-fluid" alt="">
+                         </a>
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Walter White</h4>
@@ -645,7 +647,10 @@
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                            <img src="{{asset ('newbiz/img/order-2.jpeg')}}" class="img-fluid" alt="">
+                        <a href="/design-interior">
+                        <img  href="/design-interior" src="{{asset ('newbiz/img/order-2.jpeg')}}" class="img-fluid" alt="">
+                        
+                        </a>
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Sarah Jhonson</h4>
@@ -663,7 +668,9 @@
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
+                        <a href="/design-logo">
                             <img src="{{asset ('newbiz/img/order-3.jpeg')}}" class="img-fluid" alt="">
+                           </a>
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>William Anderson</h4>
