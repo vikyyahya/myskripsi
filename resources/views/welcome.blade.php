@@ -55,8 +55,8 @@
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="#intro">Home</a></li>
+                    <li><a href="#artikel">Artikel</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#order">Order</a></li>
                     <!-- <li class="drop-down"><a href="">Drop Down</a>
@@ -134,18 +134,18 @@
     <main id="main">
 
         <!--==========================
-      About Us Section
+      Artikel Section
     ============================-->
-        <section id="about">
+        <section id="artikel">
             <div class="container">
 
                 <header class="section-header">
-                    <h3>About Us</h3>
+                    <h3>Artikel</h3>
                     <p>Kami adalah tim desainer rumah dengan basic arsitektur. Berpengalaman sejak 2015,
                     puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan.</p>
                 </header>
 
-                <div class="row about-container">
+                <div class="row artikel-container">
 
                     <div class="col-lg-6 content order-lg-1 order-2">
                         <p>
@@ -177,13 +177,13 @@
                     </div>
 
                     <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-                        <img src="{{asset ('newbiz/img/about-img.svg')}}" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/artikel-img.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
 
-                <div class="row about-extra">
+                <div class="row artikel-extra">
                     <div class="col-lg-6 wow fadeInUp">
-                        <img src="{{asset ('newbiz/img/about-extra-1.svg')}}" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/artikel-extra-1.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
                         <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
@@ -201,9 +201,9 @@
                     </div>
                 </div>
 
-                <div class="row about-extra">
+                <div class="row artikel-extra">
                     <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-                        <img src="{{asset ('newbiz/img/about-extra-2.svg')}}" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/artikel-extra-2.jpg')}}" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
@@ -227,17 +227,18 @@
                 </div>
 
             </div>
-        </section><!-- #about -->
+        </section><!-- #artikel -->
 
         <!--==========================
-      Services Section
+      About Us Section
     ============================-->
-        <section id="services" class="section-bg">
+        <section id="about" class="section-bg">
             <div class="container">
 
                 <header class="section-header">
-                    <h3>Services</h3>
-                    <p>Kami memberikan service sesuai kebutuhan anda, dengan konsep yang anda inginkan
+                    <h3>About Us</h3>
+                    <p>Kami adalah tim desainer rumah dengan basic arsitektur. Berpengalaman sejak 2015,
+                    puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan. Kami memberikan service sesuai kebutuhan anda, dengan konsep yang anda inginkan
                     kami dapat mewujudkan impian anda.</p>
                 </header>
 
@@ -254,7 +255,7 @@
                     <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
                             <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-                            <h4 class="title"><a href="">Interior Rumah</a></h4>
+                            <h4 class="title"><a href="">Interior</a></h4>
                             <p class="description">Menjadikan hunian anda nyaman untuk ditempati dengan menyesuaikan
                             karekter pemilik rumah dan tema yang diinginkan</p>
                         </div>
@@ -280,7 +281,7 @@
                 </div>
 
             </div>
-        </section><!-- #services -->
+        </section><!-- #about -->
 
         <!--==========================
       Why Us Section
@@ -828,8 +829,8 @@
                         <h4>Useful Links</h4>
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Artikel</a></li>
+                            <li><a href="#">About Us</a></li>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Privacy policy</a></li>
                         </ul>
