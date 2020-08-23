@@ -78,6 +78,14 @@
 <!-- ChartJS -->
 <script src="{{asset ('lte3/plugins/chart.js/Chart.min.js')}}"></script>
 
+//
+<script src="{{asset ('lte3/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  bsCustomFileInput.init();
+});
+</script>
+
 <!-- PAGE SCRIPTS -->
 <script src="{{asset ('lte3/dist/js/pages/dashboard.js')}}"></script>
 <script src="{{asset ('lte3/dist/js/pages/dashboard2.js')}}"></script>

@@ -33,3 +33,11 @@ Route::get('/design-exterior', 'DesignExteriorController@index');
 //design exterior
 Route::get('/design-logo', 'DesignLogoController@index');
 
+//Produk
+Route::get('/produk', 'ProdukController@index');
+Route::get('/addproduk', 'ProdukController@tambahproduk');
+Route::post('/createproduk', 'ProdukController@create');
+Route::post('/updateproduk/{id}', 'ProdukController@update');
+Route::get('/ubahproduk/{id}', 'ProdukController@tampilubah');
+
+

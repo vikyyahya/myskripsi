@@ -54,11 +54,11 @@
 
             <nav class="main-nav float-right d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li class="active"><a href="/">Home</a></li>
+                    <!-- <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#order">Order</a></li>
+                    <li><a href="#order">Order</a></li> -->
                     <!-- <li class="drop-down"><a href="">Drop Down</a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
@@ -76,7 +76,35 @@
                             <li><a href="#">Drop Down 5</a></li>
                         </ul>
                     </li> -->
-                    <li><a href="#contact">Contact Us</a></li>
+                    <!-- <li><a href="#contact">Contact Us</a></li> -->
+
+                    @if (Route::has('login'))
+                            @auth
+                                @if (Auth::user()->level == 1)
+                                    <li> <a href="{{ url('/home') }}">Dashboard</a></li>
+                                
+                                @endif
+
+                               <li class="nav-item dropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                  
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                            </li>
+                            @else
+                               <li> <a href="{{ route('login') }}">Login</a></li>
+
+                                @if (Route::has('register'))
+                                  <li>  <a href="{{ route('register') }}">Register</a></li>
+                                @endif
+                            @endauth
+                     @endif
 
                    
                    
