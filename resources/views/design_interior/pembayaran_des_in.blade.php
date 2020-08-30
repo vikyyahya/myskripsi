@@ -14,8 +14,7 @@
     <link href="{{asset ('newbiz/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -29,20 +28,10 @@
 
     <!-- Main Stylesheet File -->
     <link href="{{asset ('newbiz/css/style.css')}}" rel="stylesheet">
-
-    <!-- =======================================================
-    Theme Name: NewBiz
-    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <body>
 
-    <!--==========================
-  Header
-  ============================-->
     <header id="header" class="fixed-top">
         <div class="container">
 
@@ -59,11 +48,11 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#order">Order</a></li>
-                   
+
                     <li><a href="#contact">Contact Us</a></li>
 
-                   
-                   
+
+
                 </ul>
             </nav><!-- .main-nav -->
 
@@ -76,38 +65,64 @@
     <section id="services" class="clearfix">
         <div class="container">
             <div class="content-header">
-            <br>
+                <br>
                 <div class="container-fluid">
                     <div class="row mb-2">
-                       
-                            <h1 class="text-dark">Design Interior</h1>
-                       
-                       
+
+                        <h1 class="text-dark">Design Interior</h1>
+
+
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
+            <!-- main -->
             <div class="row mt-2 mb-2">
-            @foreach ($design_interior as $set) 
-            <div class="card ml-2 " style="width: 16rem">
-                    <img  src="{{asset('uploads/').'/'.$set->gambar }}" class="card-img-top" alt="...">
-                    </img>
-                        <div class="card-body">
-                            <h5 class="card-title">{{$set->title}}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/design-interior/detail/{{$set->id}}" class="btn btn-primary">Pilih</a>
-                        </div>
+
+
+                <div class="col-md-4">
+                    <img src="{{asset('uploads/').'/'.$produk->gambar }}" style="width: 350px; height: 350px; background-color: rgba(0,0,255,0.1);" alt="...">
+                    <label>Harga :</label>
+                    <label>Keterangan : 3D,Gambar Denah,Gambar Tampak</label>
+
                 </div>
-            @endforeach
+
+                <div class="col-md-8">
+                    <div class="card card-outline card-info">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                Pembayaran Desain
+                            </h5>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="m-3">
+                            <label> <b>Terima kasih telah melakukan pemesanan</b></label>
+                            <br />
+                            silahkan menyelesaikan order tersebut
+                            <br />
+                            Pembayaran dapat dilakukan melalui :
+                            <br />
+                            <b>BCA : 200300330</b>
+                            <br />
+                            <b>BRI : 16002929393939</b>
+
+                            <div>
+
+                            </div>
+
+                            <button class="btn btn-primary mt-5">Konfirmasi Pembayaran</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-           
+
         </div>
     </section>
     <!-- #intro -->
 
     <main id="main">
 
-      
+
 
     </main>
 
@@ -208,6 +223,22 @@
 
     <!-- Template Main Javascript File -->
     <script src="{{asset ('newbiz/js/main.js')}}"></script>
+
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Summernote -->
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+    <script>
+        $(function() {
+            // Summernote
+            $('.textarea').summernote()
+        })
+    </script>
 
 </body>
 

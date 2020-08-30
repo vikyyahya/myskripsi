@@ -26,6 +26,8 @@ Route::get('/users', 'UserController@user');
 
 //design interior
 Route::get('/design-interior', 'DesignInteriorController@index');
+Route::get('/design-interior/detail/{id}', 'DesignInteriorController@detail');
+Route::post('/design-interior/pembayaran/{id}', 'DesignInteriorController@pembayaran');
 
 //design exterior
 Route::get('/design-exterior', 'DesignExteriorController@index');
@@ -39,5 +41,4 @@ Route::get('/addproduk', 'ProdukController@tambahproduk');
 Route::post('/createproduk', 'ProdukController@create');
 Route::post('/updateproduk/{id}', 'ProdukController@update');
 Route::get('/ubahproduk/{id}', 'ProdukController@tampilubah');
-
-
+Route::get('/hapusproduk/{id}', 'ProdukController@delete');

@@ -38,9 +38,9 @@ class ProdukController extends Controller
             'type' => 'required',
             'file' => 'required|max:2048',
         ]);
-
+        $nama_produk = str_replace(' ','_', $request->nama_produk);
         $data = $request->all();
-        $fileName = $request->nama_produk.time().'.'.$request->file->extension();  
+        $fileName = $nama_produk.time().'.'.$request->file->extension();  
         // return $fileName;
         $request->file->move(public_path('uploads'), $fileName);
         $id_user = Auth::user()->id;
@@ -83,8 +83,13 @@ class ProdukController extends Controller
         }
         $dok->update($request->all());
         return redirect('/produk')->with('sukses', 'Data Berhasil Di ubah!');
+    }
 
-
+    public function delete($id)
+    {
+        $user = Produk::find($id);
+        $user->delete($user);
+        return redirect('/produk')->with('sukses', 'Data berhasil dihapus!');
     }
 
 

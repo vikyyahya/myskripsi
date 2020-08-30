@@ -23,8 +23,8 @@
 
 <br/>
 
-<a href="/addproduk" class="btn btn-primary ml-1">
-    <i class="fa fa-plus nav-icon"></i>
+<a href="/addproduk" class="btn btn-primary ml-3">
+    <i class="fa fa-plus nav-icon"> Tambah Produk</i>
 </a>
 
 <br/>
@@ -76,7 +76,7 @@
                                 <i class="fa fa-edit nav-icon"></i>
                             </a>
 
-                            <a onClick="return confirm('Yakin ingin menghapus data?')" href="#"
+                            <a onClick="return confirm('Yakin ingin menghapus data?')" href="/hapusproduk/{{$s->id}}"
                                 class="btn btn btn-danger btn-sm">
                                 <i class="fa fa-trash nav-icon"></i>
                             </a>
