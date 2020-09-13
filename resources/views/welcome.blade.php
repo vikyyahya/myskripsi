@@ -14,8 +14,7 @@
     <link href="{{asset ('newbiz/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -79,34 +78,33 @@
                     <li><a href="#contact">Contact Us</a></li>
 
                     @if (Route::has('login'))
-                            @auth
-                                @if (Auth::user()->level == 1)
-                                    <li> <a href="{{ url('/home') }}">Dashboard</a></li>
-                                
-                                @endif
+                    @auth
+                    @if (Auth::user()->level == 1)
+                    <li> <a href="{{ url('/home') }}">Dashboard</a></li>
 
-                               <li class="nav-item dropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                    @endif
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                  
+                            {{ __('Logout') }}
+                        </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                            </li>
-                            @else
-                               <li> <a href="{{ route('login') }}">Login</a></li>
 
-                                @if (Route::has('register'))
-                                  <li>  <a href="{{ route('register') }}">Register</a></li>
-                                @endif
-                            @endauth
-                     @endif
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+                    @else
+                    <li> <a href="{{ route('login') }}">Login</a></li>
 
-                   
+                    @if (Route::has('register'))
+                    <li> <a href="{{ route('register') }}">Register</a></li>
+                    @endif
+                    @endauth
+                    @endif
+
+
                 </ul>
             </nav><!-- .main-nav -->
 
@@ -126,9 +124,9 @@
             <div class="intro-info">
                 <h2>We Always<br><span>Give Solutions</span><br>for your business!</h2>
                 <div>
-            </div>
+                </div>
 
-        </div>
+            </div>
     </section><!-- #intro -->
 
     <main id="main">
@@ -142,15 +140,15 @@
                 <header class="section-header">
                     <h3>Artikel</h3>
                     <p>Kami adalah tim desainer rumah dengan basic arsitektur. Berpengalaman sejak 2015,
-                    puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan.</p>
+                        puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan.</p>
                 </header>
 
                 <div class="row artikel-container">
 
                     <div class="col-lg-6 content order-lg-1 order-2">
                         <p>
-                        Kebanyakan kami mengerjakan design interior dan perumahan serta perkantoran.
-                        Kosep pelayanan design kami adalah design yang berkualitas dengan harga yang terjangkau.
+                            Kebanyakan kami mengerjakan design interior dan perumahan serta perkantoran.
+                            Kosep pelayanan design kami adalah design yang berkualitas dengan harga yang terjangkau.
                         </p>
 
                         <div class="icon-box wow fadeInUp">
@@ -238,8 +236,8 @@
                 <header class="section-header">
                     <h3>About Us</h3>
                     <p>Kami adalah tim desainer rumah dengan basic arsitektur. Berpengalaman sejak 2015,
-                    puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan. Kami memberikan service sesuai kebutuhan anda, dengan konsep yang anda inginkan
-                    kami dapat mewujudkan impian anda.</p>
+                        puluhan desain sudah kami kerjakan, dan hasilnya sangat memuaskan. Kami memberikan service sesuai kebutuhan anda, dengan konsep yang anda inginkan
+                        kami dapat mewujudkan impian anda.</p>
                 </header>
 
                 <div class="row">
@@ -249,7 +247,7 @@
                             <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
                             <h4 class="title"><a href="">Exterior Rumah</a></h4>
                             <p class="description">Rumah idaman adalah indah terlihat dari luar
-                            serta rahan dari segala cuaca tropis di Indonesia</p>
+                                serta rahan dari segala cuaca tropis di Indonesia</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
@@ -257,17 +255,16 @@
                             <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
                             <h4 class="title"><a href="">Interior</a></h4>
                             <p class="description">Menjadikan hunian anda nyaman untuk ditempati dengan menyesuaikan
-                            karekter pemilik rumah dan tema yang diinginkan</p>
+                                karekter pemilik rumah dan tema yang diinginkan</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s"
-                        data-wow-duration="1.4s">
+                    <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="box">
                             <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
                             <h4 class="title"><a href="">Design Logo</a></h4>
                             <p class="description">Untuk memulai bisnis baru harus memuliki identitas perusahaan dan bisnis yang dimiliki,
-                            Anda dapat memberikan informasi untuk kami wujudkan menjadi logo yang diinginkan</p>
+                                Anda dapat memberikan informasi untuk kami wujudkan menjadi logo yang diinginkan</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
@@ -301,7 +298,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Estimasi Biaya Terjangkau</h5>
                                 <p class="card-text">Sebelum anda memilih order, anda akan ditampilkan estimasi biaya yang anda butuhkan,
-                                ini dapat membatu anda untuk mempersiapkan dana dengan hasil yang diinginkan.</p>
+                                    ini dapat membatu anda untuk mempersiapkan dana dengan hasil yang diinginkan.</p>
                                 <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
@@ -324,7 +321,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Mengubah Design</h5>
                                 <p class="card-text">Gambar visualisasi itu sangat penting.
-                                karena dengan gambar visualisasi yang realistik anda dapat mengetahui seperti apa desain eksterior atau interior rumah anda.. </p>
+                                    karena dengan gambar visualisasi yang realistik anda dapat mengetahui seperti apa desain eksterior atau interior rumah anda.. </p>
                                 <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
@@ -386,10 +383,8 @@
                                 <h4><a href="#">Coffee Shop</a></h4>
                                 <p>Interior</p>
                                 <div>
-                                    <a href="{{asset('newbiz/img/portfolio/app1.jpg')}}" data-lightbox="portfolio" data-title="App 1"
-                                        class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset('newbiz/img/portfolio/app1.jpg')}}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -402,10 +397,8 @@
                                 <h4><a href="#">Minimalis Design</a></h4>
                                 <p>Exterior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/web3.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/web3.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -418,10 +411,8 @@
                                 <h4><a href="#">Smart Home Type</a></h4>
                                 <p>Exterior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/app2.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/app2.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -434,10 +425,8 @@
                                 <h4><a href="#">Transmart</a></h4>
                                 <p>Interior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/card2.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/card2.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -450,10 +439,8 @@
                                 <h4><a href="#">Farm Market</a></h4>
                                 <p>Interior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/web2.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/web2.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -466,10 +453,8 @@
                                 <h4><a href="#">AEON Mall</a></h4>
                                 <p>Sign Logo</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/app3.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/app3.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -482,10 +467,8 @@
                                 <h4><a href="#">Toyota Showroom</a></h4>
                                 <p>Interior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/card1.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/card1.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -498,10 +481,8 @@
                                 <h4><a href="#">Showroom VW</a></h4>
                                 <p>Interior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/card3.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/card3.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -514,10 +495,8 @@
                                 <h4><a href="#">Sinarmas Office</a></h4>
                                 <p>Interior</p>
                                 <div>
-                                    <a href="{{asset ('newbiz/img/portfolio/web1.jpg')}}" class="link-preview" data-lightbox="portfolio"
-                                        data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                                    <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
+                                    <a href="{{asset ('newbiz/img/portfolio/web1.jpg')}}" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                                    <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -621,9 +600,9 @@
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp">
                         <div class="member">
-                        <a href="/design-exterior">
-                        <img src="{{asset ('newbiz/img/order-1.jpeg')}}" class="img-fluid" alt="">
-                         </a>
+                            <a href="/design-exterior">
+                                <img src="{{asset ('newbiz/img/order-1.jpeg')}}" class="img-fluid" alt="">
+                            </a>
                             <div class="member-info">
                                 <div class="member-info-content">
                                 </div>
@@ -633,10 +612,10 @@
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                        <a href="/design-interior">
-                        <img  href="/design-interior" src="{{asset ('newbiz/img/order-2.jpeg')}}" class="img-fluid" alt="">
-                        
-                        </a>
+                            <a href="/design-interior">
+                                <img href="/design-interior" src="{{asset ('newbiz/img/order-2.jpeg')}}" class="img-fluid" alt="">
+
+                            </a>
                             <div class="member-info">
                                 <div class="member-info-content">
                                 </div>
@@ -646,9 +625,9 @@
 
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
-                        <a href="/design-logo">
-                            <img src="{{asset ('newbiz/img/order-3.jpeg')}}" class="img-fluid" alt="">
-                           </a>
+                            <a href="/design-logo">
+                                <img src="{{asset ('newbiz/img/order-3.jpeg')}}" class="img-fluid" alt="">
+                            </a>
                             <div class="member-info">
                                 <div class="member-info-content">
                                 </div>
@@ -743,9 +722,21 @@
 
                     <div class="col-lg-6">
                         <div class="map mb-4 mb-lg-0">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                                frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+                            <iframe width="600" height="400" src="https://maps.google.com/maps?hl=en&amp;q=daanmogot 47+()&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://googlemapsembed.net/" rel="nofollow">Google Maps Embed</a> </small></div>
+                            <style>
+                                .nvs {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 325px;
+                                    width: 643px;
+                                }
+
+                                #gmap_canvas img {
+                                    max-width: none !important;
+                                    background: none !important
+                                }
+                            </style>
                         </div>
                     </div>
 
@@ -771,27 +762,20 @@
                             <form action="" method="post" role="form" class="contactForm">
                                 <div class="form-row">
                                     <div class="form-group col-lg-6">
-                                        <input type="text" name="name" class="form-control" id="name"
-                                            placeholder="Your Name" data-rule="minlen:4"
-                                            data-msg="Please enter at least 4 chars" />
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                         <div class="validation"></div>
                                     </div>
                                     <div class="form-group col-lg-6">
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="Your Email" data-rule="email"
-                                            data-msg="Please enter a valid email" />
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject"
-                                        placeholder="Subject" data-rule="minlen:4"
-                                        data-msg="Please enter at least 8 chars of subject" />
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="text-center"><button type="submit" title="Send Message">Send

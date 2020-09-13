@@ -17,25 +17,18 @@
 </div>
 @endif
 
-{{-- <button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#importExcel">
-    <i class="fas fa-file-excel"></i> Import Excel
-</button> --}}
 
-<br />
-
-<a href="/addproduk" class="btn btn-primary ml-3">
-    <i class="fa fa-plus nav-icon"> Tambah Produk</i>
+<a href="/adduser" class="btn btn-primary m-3">
+    <i class="fa fa-plus nav-icon"></i>
 </a>
 
-<br />
-<br />
 
 <div class="card m-3" style="border-top: 2px solid">
 
     <div class="card-header ">
-        <h4>Produk</h4>
+        <h4>Pesan</h4>
         <div class="card-tools mr-1">
-            <form action="/produk/cari" method="GET">
+            <form action="/users/cari" method="GET">
                 @csrf
                 <div class="input-group input-group-sm" style="width: 150px;">
                     <input type="text" name="cari" class="form-control float-right" placeholder="Search">
@@ -48,49 +41,35 @@
         </div>
     </div>
 
-
-    <div class="card-body">
+    <div class="card-body ">
         <table class="table table-striped table table-bordered" id="myTable">
             <thead>
                 <tr>
                     <th class="text-center">No</th>
-                    <th class="text-center">Nama Produk</th>
-                    <th class="text-center">Title</th>
-                    <th class="text-center">Diskripsi</th>
-                    <th class="text-center">Type</th>
-                    <th class="text-center">Gambar</th>
+                    <th class="text-center">Nama Pengirim</th>
+                    <th class="text-center">Pesan</th>
                     <th class="text-center" width="8%">Action</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($produk ?? '' as $s)
+                @foreach($users ?? '' as $s)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$s->nama_produk}}</td>
-                    <td>{{$s->title}}</td>
-                    <td>{{$s->diskripsi}}</td>
-                    <td>{{$s->type}}</td>
-                    <td>
-                        <img style="width:50px;height:50px;" class="img-fluid" src="{{ URL::to('/') }}/uploads/{{$s->gambar}}">
-
-                        </img>
-                    </td>
+                    <td>{{$s->user_id}}</td>
+                    <td>{{$s->pesan}}</td>
                     <td>
                         <div class="btn-group">
 
-                            <!-- URL::to('/admin/category/detail.id='.$cate-id -->
-                            <!-- <a href="#" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom"
-                                title="Info">
-                                <i class="fa fa-info-circle nav-icon"></i>
-                            </a> -->
-
-                            <a href="/ubahproduk/{{$s->id}}" class="btn btn-warning  btn-sm" data-toggle="tootip" data-placement="bottom" title="Edit">
-                                <i class="fa fa-edit nav-icon"></i>
+                            <a href="/edituser/{{$s->id}}" class="btn btn-warning" data-toggle="tootip" data-placement="bottom" title="Edit">
+                                lihat
+                            </a>
+                            <a href="/edituser/{{$s->id}}" class="btn btn-success" data-toggle="tootip" data-placement="bottom" title="Edit">
+                                jawab
                             </a>
 
-                            <a onClick="return confirm('Yakin ingin menghapus data?')" href="/hapusproduk/{{$s->id}}" class="btn btn btn-danger btn-sm">
+                            <!-- <a onClick="return confirm('Yakin ingin menghapus data?')" href="/user/{{$s->id}}/delete" class="btn btn btn-danger btn-sm">
                                 <i class="fa fa-trash nav-icon"></i>
-                            </a>
+                            </a> -->
 
                         </div>
                     </td>
@@ -102,7 +81,7 @@
     </div>
     <div class="card-footer clearfix">
         <ul class="pagination pagination-sm m-0 float-right">
-            {{$produk->links()}}
+            {{$users->links()}}
         </ul>
     </div>
 </div>

@@ -22,7 +22,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
-Route::get('/users', 'UserController@user');
 
 //design interior
 Route::get('/design-interior', 'DesignInteriorController@index');
@@ -42,3 +41,15 @@ Route::post('/createproduk', 'ProdukController@create');
 Route::post('/updateproduk/{id}', 'ProdukController@update');
 Route::get('/ubahproduk/{id}', 'ProdukController@tampilubah');
 Route::get('/hapusproduk/{id}', 'ProdukController@delete');
+
+//user
+Route::get('/users', 'UserController@user');
+Route::get('/adduser', 'UserController@adduser');
+Route::get('/edituser/{id}', 'UserController@edituser');
+Route::post('/createuser', 'UserController@create');
+Route::post('/upadateuser/{id}', 'UserController@update');
+Route::get('/user/{id}/delete', 'UserController@delete');
+Route::get('/users/cari', 'UserController@cari');
+
+//Pesan
+Route::get('/pesan', 'PesanController@index');

@@ -12,7 +12,7 @@ class ProdukController extends Controller
     //
     public function index()
     {
-        $p = Produk::all();
+        $p = Produk::paginate(5);
         return view('produk.produk', ['produk' => $p]);
     }
 
@@ -24,8 +24,8 @@ class ProdukController extends Controller
             ['id' => '2', 'name' => 'Design Interor'],
             ['id' => '3', 'name' => 'Design Graphic'],
         ]);
-        $type = $types->pluck('name','name');
-        return view('produk.tambahproduk', ['produk' => $p,'type'=>$type]);
+        $type = $types->pluck('name', 'name');
+        return view('produk.tambahproduk', ['produk' => $p, 'type' => $type]);
     }
 
     public function create(Request $request)
@@ -38,9 +38,9 @@ class ProdukController extends Controller
             'type' => 'required',
             'file' => 'required|max:2048',
         ]);
-        $nama_produk = str_replace(' ','_', $request->nama_produk);
+        $nama_produk = str_replace(' ', '_', $request->nama_produk);
         $data = $request->all();
-        $fileName = $nama_produk.time().'.'.$request->file->extension();  
+        $fileName = $nama_produk . time() . '.' . $request->file->extension();
         // return $fileName;
         $request->file->move(public_path('uploads'), $fileName);
         $id_user = Auth::user()->id;
@@ -62,11 +62,11 @@ class ProdukController extends Controller
             ['id' => '2', 'name' => 'Design Interor'],
             ['id' => '3', 'name' => 'Design Graphic'],
         ]);
-        $type = $types->pluck('name','name');
-        return view('produk.ubahproduk', ['produk' => $p,'type'=>$type]);
+        $type = $types->pluck('name', 'name');
+        return view('produk.ubahproduk', ['produk' => $p, 'type' => $type]);
     }
 
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         $a = $request;
         $request->validate([
@@ -76,8 +76,8 @@ class ProdukController extends Controller
             'type' => 'required',
         ]);
         $dok = Produk::find($id);
-        if($request->file != null){
-            $fileName = $request->nama_produk.time().'.'.$request->file->extension();  
+        if ($request->file != null) {
+            $fileName = $request->nama_produk . time() . '.' . $request->file->extension();
             // return $fileName;
             $request->file->move(public_path('uploads'), $fileName);
         }
@@ -91,6 +91,4 @@ class ProdukController extends Controller
         $user->delete($user);
         return redirect('/produk')->with('sukses', 'Data berhasil dihapus!');
     }
-
-
 }
