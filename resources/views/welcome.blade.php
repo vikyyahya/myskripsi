@@ -150,51 +150,46 @@
                             Kebanyakan kami mengerjakan design interior dan perumahan serta perkantoran.
                             Kosep pelayanan design kami adalah design yang berkualitas dengan harga yang terjangkau.
                         </p>
-
-                        <div class="icon-box wow fadeInUp">
-                            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-                            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                                tempore, cum soluta nobis est eligendi</p>
-                        </div>
-
-                        <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="icon"><i class="fa fa-photo"></i></div>
-                            <h4 class="title"><a href="">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum</p>
-                        </div>
-
-                        <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon"><i class="fa fa-bar-chart"></i></div>
-                            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat tarad limino ata</p>
-                        </div>
-
                     </div>
+                </div>
 
+                <div class="row artikel-extra">
                     <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
                         <img src="{{asset ('newbiz/img/artikel-img.jpg')}}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+                        <h4> Design Exterior</h4>
+                        <p>
+                            Design ekterior bangunan merupakan suatu karya arsitekture yang membuat tampilan konsep dan gaya
+                            dari suatu masa, budaya serta teknologi masyarakat.
+                        </p>
+                        <p>
+                            Melalui media srsitekture manusia menciptakan bangunan yang digunakan untuk kehidupan mereka melalui karya ilmiah
+                            arsitekture inilah manusia membuat pilihan untuk mengolah sebuah bangunan agar tampak lebih indah dan memenuhi fungsi utamanya.
+                            Exterior banunan merupakan kulit terluar yang jelas terlihat dari pencapaian ketiga factor tersebut yaitu masa, budaya dan teknologi
+                        </p>
                     </div>
                 </div>
 
                 <div class="row artikel-extra">
                     <div class="col-lg-6 wow fadeInUp">
-                        <img src="{{asset ('newbiz/img/artikel-extra-1.jpg')}}" class="img-fluid" alt="">
+                        <img src="{{asset ('newbiz/img/artikel-extra-1.jpg')}}" class="img-fluid mb-4" alt="">
                     </div>
                     <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-                        <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                        <h4>Design Interior</h4>
                         <p>
-                            Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
-                            perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
-                            recusandae non ad at et a.
+                            Pengertian desain interior atau interior desain adalah sebuah hal yang berkenana dengan bidang kreatif
+                            beserta solusi-solusi teknis yang diterapkan kedalam struktur yang dibangun.
+                            Desain interior sendiri ditujukan untuk mencapai lingkungan di dalam sebuah ruang.
                         </p>
                         <p>
-                            Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea
-                            corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus
-                            quia sit. P
-                            orro rerum eum eum.
+                            Keberadaan hal tersebut bersifat fungsional, diantaranya untuk meningkatkan kualitas kehidupan dan budaya
+                            penghuninya serta memunculkan kesan memimiliki estetika dalam sebuah ruangan sehingga dapat terlihat lebih menarik.
+                        </p>
+                        <p>
+                            Dalam desain interior sendiri, terdapat tiga hal yang tidak terlepas dari hal terseut
+                            serta dijadikan sebagai acuannya, yaitu: ruang, alat, manusia
                         </p>
                     </div>
                 </div>
@@ -205,20 +200,19 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                        <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
-                        </h4>
+                        <h4>Design Logo dan Branding</h4>
                         <p>
-                            Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis.
-                            Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus
-                            corporis autem at blanditiis beatae incidunt sunt.
+                            Design logo sangat berpengaruh pada branding suatu produk,
+                            maka dari itu, buatlah logo perusahaan Anda dengan sangat bagus sehingga bukan hanya mudah diingat,
+                            tetapi juga bisa mencitrakan produk produk yang Anda jual.
                         </p>
                         <p>
-                            Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse
-                            molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+                            Logo merupakan representasi dari perusahaan – mendefinisikan identitas dan visi misinya.
+                            Dengan adanya sebuah logo,konsumen bisa dengan sangat mudah memilih barang mana yang akan mereka beli.
                         </p>
                         <p>
-                            Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est
-                            aut fuga mollitia exercitationem nam accusantium provident quia.
+                            Logo juga merupakan bagian yang tidak dapat dipisahkan dari strategi branding perusahaan.
+                            Setiap konsumen memiliki pendapat yang kuat mengenai brand kesayangan
                         </p>
                     </div>
 
@@ -744,15 +738,15 @@
                         <div class="row">
                             <div class="col-md-5 info">
                                 <i class="ion-ios-location-outline"></i>
-                                <p>A108 Adam Street, NY 535022</p>
+                                <p>Jl.Daan Mogot No 47, Jakarta Barat</p>
                             </div>
                             <div class="col-md-4 info">
                                 <i class="ion-ios-email-outline"></i>
-                                <p>info@example.com</p>
+                                <p>kreasi.artha@gmail.com</p>
                             </div>
                             <div class="col-md-3 info">
                                 <i class="ion-ios-telephone-outline"></i>
-                                <p>+1 5589 55488 55</p>
+                                <p>+62 8999 2746 24</p>
                             </div>
                         </div>
 
@@ -820,11 +814,12 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            DKI Jakarta <br>
+                            Ruko Daan Mogot <br>
+                            Jl. Daan Mogot Raya 47<br>
+                            Jakarta Barat <br>
+                            <strong>Phone:</strong> +62 8999 2746 24<br>
+                            <strong>Email:</strong> kreasi.artha@gmail.com<br>
                         </p>
 
                         <div class="social-links">
