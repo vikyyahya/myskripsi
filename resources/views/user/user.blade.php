@@ -49,6 +49,7 @@
                     <th class="text-center">Nama</th>
                     <th class="text-center">Email</th>
                     <th class="text-center">Level</th>
+                    <th class="text-center">No telepon</th>
                     <th class="text-center" width="8%">Action</th>
                 </tr>
             </thead>
@@ -59,6 +60,7 @@
                     <td>{{$s->name}}</td>
                     <td>{{$s->email}}</td>
                     <td>{{$s->levels->name}}</td>
+                    <td>{{$s->tlp}}</td>
                     <td>
                         <div class="btn-group">
 
