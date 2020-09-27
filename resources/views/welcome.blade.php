@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                        <h4> Design Exterior</h4>
+                        <h3><a href="">Design Exterior</a></h3>
                         <p>
                             Design ekterior bangunan merupakan suatu karya arsitekture yang membuat tampilan konsep dan gaya
                             dari suatu masa, budaya serta teknologi masyarakat.
@@ -177,7 +177,7 @@
                         <img src="{{asset ('newbiz/img/artikel-extra-1.jpg')}}" class="img-fluid mb-4" alt="">
                     </div>
                     <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-                        <h4>Design Interior</h4>
+                    <h3><a href="">Design Interior</a></h3>
                         <p>
                             Pengertian desain interior atau interior desain adalah sebuah hal yang berkenana dengan bidang kreatif
                             beserta solusi-solusi teknis yang diterapkan kedalam struktur yang dibangun.
@@ -200,7 +200,7 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                        <h4>Design Logo dan Branding</h4>
+                    <h3><a href="">Design Logo & Branding</a></h3>
                         <p>
                             Design logo sangat berpengaruh pada branding suatu produk,
                             maka dari itu, buatlah logo perusahaan Anda dengan sangat bagus sehingga bukan hanya mudah diingat,
@@ -585,7 +585,7 @@
             <div class="container">
                 <div class="section-header">
                     <h3>Order</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                    <p>Silakan order sesuai dengan kebutuhan anda saat ini, pastikan sudah membaca cara untuk memesan dan rules pemesanan, Terima Kasih.</p>
                 </div>
 
                 <div class="row">
@@ -792,10 +792,9 @@
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 footer-info">
-                        <h3>NewBiz</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                            proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                        <h3>Kreasi Artha Makmur</h3>
+                        <p>Memberikan solusi mudah dan cepat kepada anda yang membutuhkan design rumah atau usaha anda. Dengan memesan
+                        design secara online dapat memberikan efisiensi waktu. Anda jug adapat berkomunikasi langsung via chat online.</p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
@@ -831,10 +830,6 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam
-                            illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase
-                            seza.</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -846,7 +841,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+                &copy; Copyright <strong>Kreasi Artha MAkmur</strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!--
