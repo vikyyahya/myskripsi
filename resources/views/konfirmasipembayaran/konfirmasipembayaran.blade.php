@@ -18,7 +18,13 @@
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
+    <!-- file -->
+    <script src="{{asset ('lte3/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
     <!-- Libraries CSS Files -->
     <link href="{{asset ('newbiz/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset ('newbiz/lib/animate/animate.min.css')}}" rel="stylesheet">
@@ -43,56 +49,91 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
 
-                        <h1 class="text-dark">Design Interior</h1>
+                        <h1 class="text-dark">Konfirmasi Pembayaran</h1>
 
 
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
             <!-- main -->
-            <div class="row mt-2 mb-2">
+            <div class="row m-3">
+                <div class="col-md-12">
+                    <form action="/konfirmasipmb" method="POST" enctype="multipart/form-data">
 
+                        @csrf
 
-                <div class="col-md-4">
-                    <img src="{{asset('uploads/').'/'.$produk->gambar }}" style="width: 350px; height: 350px; background-color: rgba(0,0,255,0.1);" alt="...">
-                    <label>Harga : Rp. {{$produk->harga}}</label>
-                    <label>Keterangan : {{$produk->diskripsi}}</label>
-
-                </div>
-
-                <div class="col-md-8">
-                    <div class="card card-outline card-info">
-                        <div class="card-header">
-                            <h5 class="card-title">
-                                Pembayaran Desain
-                            </h5>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="m-3">
-                            <label> <b>Terima kasih telah melakukan pemesanan</b></label>
-                            <br />
-                            <label> <b>No Order Kamu adalah</b></label>
-                            <br />
-                            <h5><b>{{$id_order}}</b></h5>
-                            <br />
-
-                            silahkan menyelesaikan order tersebut
-                            <br />
-                            Pembayaran dapat dilakukan melalui :
-                            <br />
-                            <b>BCA : 200300330</b>
-                            <br />
-                            <b>BRI : 16002929393939</b>
-
-                            <div>
-
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Konfirmasi Pembayaran</h3>
                             </div>
 
-                            <a href="/konfirmasipembayaran" class="btn btn-primary mt-5">Konfirmasi Pembayaran</a>
-                        </div>
-                    </div>
-                </div>
+                            <div class="card-body">
 
+                                @if ($sukses = Session::get('sukses'))
+                                <div class="alert alert-success alert-block">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <i class="icon fas fa-check"></i> {{ $sukses }}
+                                </div>
+                                @endif
+
+                                @if($errors->any())
+                                <div class="alert alert-danger">
+                                    {{implode('', $errors->all(':message'))}}
+                                </div>
+                                @endif
+
+                                <div class="form-group">
+                                    <label>No Order</label>
+                                    <input type="text" name="id" value="" placeholder="" class="form-control" required autofocus>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nama Bank</label>
+                                    <input type="text" name="nama_bank" placeholder="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>No Rekening</label>
+                                    <input type="number" name="no_rekening" placeholder="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Tanggal Pembayaran</label>
+                                    <input type="date" name="tanggal_pembayaran" placeholder="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Upload Bukti Pembayaran</label>
+
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="card-footer">
+
+                                    <a href="/user" class="btn btn-default">Batal</a>
+                                    &nbsp;&nbsp;
+                                    <input type="submit" value="Konfirmasi" class="pull-right btn btn-primary">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
 
         </div>
@@ -142,6 +183,12 @@
             // Summernote
             $('.textarea').summernote()
         })
+    </script>
+    <script src="{{asset ('lte3/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            bsCustomFileInput.init();
+        });
     </script>
 
 </body>

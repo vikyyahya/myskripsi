@@ -14,8 +14,7 @@
     <link href="{{asset ('newbiz/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -30,12 +29,6 @@
     <!-- Main Stylesheet File -->
     <link href="{{asset ('newbiz/css/style.css')}}" rel="stylesheet">
 
-    <!-- =======================================================
-    Theme Name: NewBiz
-    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <body>
@@ -43,153 +36,49 @@
     <!--==========================
   Header
   ============================-->
-    <header id="header" class="fixed-top">
-        <div class="container">
+    @include('header_user')
 
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="#intro" class="scrollto"><img src="{{asset('newbiz/img/logo.png')}}" alt="" class="img-fluid"></a>
-            </div>
-
-            <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#order">Order</a></li>
-                   
-                    <li><a href="#contact">Contact Us</a></li>
-
-                   
-                   
-                </ul>
-            </nav><!-- .main-nav -->
-
-        </div>
-    </header><!-- #header -->
-
-    <!--==========================
-    Intro Section
-  ============================-->
     <section id="services" class="clearfix">
         <div class="container">
             <div class="content-header">
-            <br>
+                <br>
                 <div class="container-fluid">
                     <div class="row mb-2">
-                       
-                            <h1 class="text-dark">Design Interior</h1>
-                       
-                       
+
+                        <h1 class="text-dark">Design Interior</h1>
+
+
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
             <div class="row mt-2 mb-2">
-            @foreach ($design_interior as $set) 
-            <div class="card ml-2 " style="width: 16rem">
-                    <img  src="{{asset('uploads/').'/'.$set->gambar }}" class="card-img-top" alt="...">
+                @foreach ($design_interior as $set)
+                <div class="card ml-2 " style="width: 16rem">
+                    <img src="{{asset('uploads/').'/'.$set->gambar }}" class="card-img-top" alt="...">
                     </img>
-                        <div class="card-body">
-                            <h5 class="card-title">{{$set->title}}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/design-interior/detail/{{$set->id}}" class="btn btn-primary">Pilih</a>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{$set->title}}</h5>
+                        <p class="card-text">{{$set->diskripsi}}</p>
+                        <a href="/design-interior/detail/{{$set->id}}" class="btn btn-primary">Pilih</a>
+                    </div>
                 </div>
-            @endforeach
+                @endforeach
 
             </div>
-           
+
         </div>
     </section>
     <!-- #intro -->
 
     <main id="main">
 
-      
+
 
     </main>
 
-    <!--==========================
-    Footer
-  ============================-->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h3>NewBiz</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                            proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam
-                            illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase
-                            seza.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-        -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-    </footer><!-- #footer -->
-
+    @include('footer_user')
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- Uncomment below i you want to use a preloader -->
-    <!-- <div id="preloader"></div> -->
+
 
     <!-- JavaScript Libraries -->
     <script src="{{asset ('newbiz/lib/jquery/jquery.min.js')}}"></script>
@@ -212,28 +101,3 @@
 </body>
 
 </html>
-
-
-<!-- <div class="flex-center position-ref full-height">
-  @if (Route::has('login'))
-      <div class="top-right links">
-          @auth
-              <a href="{{ url('/home') }}">Dashboard</a>
-          @else
-              <a href="{{ route('login') }}">Login</a>
-
-              @if (Route::has('register'))
-                  <a href="{{ route('register') }}">Register</a>
-              @endif
-          @endauth
-      </div>
-  @endif
-
-  <div class="content">
-      <div class="title m-b-md">
-          Selamat Datang
-      </div>
-
-     
-  </div>
-</div> -->

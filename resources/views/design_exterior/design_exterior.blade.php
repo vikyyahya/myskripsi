@@ -14,8 +14,7 @@
     <link href="{{asset ('newbiz/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -40,118 +39,43 @@
 
 <body>
 
-    <!--==========================
-  Header
-  ============================-->
-    <header id="header" class="fixed-top">
-        <div class="container">
+    @include('header_user')
 
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="#intro" class="scrollto"><img src="{{asset('newbiz/img/logo.png')}}" alt="" class="img-fluid"></a>
-            </div>
-
-            <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="/">Home</a></li>
-                    <!-- <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#order">Order</a></li> -->
-                    <!-- <li class="drop-down"><a href="">Drop Down</a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="drop-down"><a href="#">Drop Down 2</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                            <li><a href="#">Drop Down 5</a></li>
-                        </ul>
-                    </li> -->
-                    <!-- <li><a href="#contact">Contact Us</a></li> -->
-
-                    @if (Route::has('login'))
-                            @auth
-                                @if (Auth::user()->level == 1)
-                                    <li> <a href="{{ url('/home') }}">Dashboard</a></li>
-                                
-                                @endif
-
-                               <li class="nav-item dropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                  
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                            </li>
-                            @else
-                               <li> <a href="{{ route('login') }}">Login</a></li>
-
-                                @if (Route::has('register'))
-                                  <li>  <a href="{{ route('register') }}">Register</a></li>
-                                @endif
-                            @endauth
-                     @endif
-
-                   
-                   
-                </ul>
-            </nav><!-- .main-nav -->
-
-        </div>
-    </header><!-- #header -->
-
-    <!--==========================
-    Intro Section
-  ============================-->
     <section id="services" class="clearfix">
         <div class="container">
             <div class="content-header">
-            <br>
+                <br>
                 <div class="container-fluid">
                     <div class="row mb-2">
-                       
-                            <h1 class="text-dark">Design Exterior</h1>
-                       
-                       
+
+                        <h1 class="text-dark">Design Exterior</h1>
+
+
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
             <div class="row mt-2 mb-2">
-            @foreach ($design_interior as $set) 
-            <div class="card ml-2 " style="width: 16rem">
-                    <img  src="{{asset('image/').'/'.$set }}" class="card-img-top" alt="...">
+                @foreach ($design_interior as $set)
+                <div class="card ml-2 " style="width: 16rem">
+                    <img src="{{asset('image/').'/'.$set }}" class="card-img-top" alt="...">
                     </img>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Pilih</a>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Pilih</a>
+                    </div>
                 </div>
-            @endforeach
+                @endforeach
 
             </div>
-           
+
         </div>
     </section>
     <!-- #intro -->
 
     <main id="main">
 
-      
+
 
     </main>
 

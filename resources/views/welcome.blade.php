@@ -501,9 +501,7 @@
             </div>
         </section><!-- #portfolio -->
 
-        <!--==========================
-      Clients Section
-    ============================-->
+
         <section id="testimonials" class="section-bg">
             <div class="container">
 

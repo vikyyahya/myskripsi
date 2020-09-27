@@ -19,20 +19,29 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::group(['middleware' => 'auth'], function () {
+    //design interior
+    Route::get('/design-interior', 'DesignInteriorController@index');
+    Route::get('/design-interior/detail/{id}', 'DesignInteriorController@detail');
+    Route::post('/design-interior/pembayaran/{id}', 'DesignInteriorController@pembayaran');
+
+    //design exterior
+    Route::get('/design-exterior', 'DesignExteriorController@index');
+
+    //design logo
+    Route::get('/design-logo', 'DesignLogoController@index');
+});
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
+//konfirmasi pembayaran
+Route::get('/konfirmasipembayaran', 'KonfirmasiPembayaran@index');
+Route::post('/konfirmasipmb', 'KonfirmasiPembayaran@konfirmasi');
 
-//design interior
-Route::get('/design-interior', 'DesignInteriorController@index');
-Route::get('/design-interior/detail/{id}', 'DesignInteriorController@detail');
-Route::post('/design-interior/pembayaran/{id}', 'DesignInteriorController@pembayaran');
 
-//design exterior
-Route::get('/design-exterior', 'DesignExteriorController@index');
 
-//design exterior
-Route::get('/design-logo', 'DesignLogoController@index');
 
 //Produk
 Route::get('/produk', 'ProdukController@index');
@@ -53,3 +62,4 @@ Route::get('/users/cari', 'UserController@cari');
 
 //Pesan
 Route::get('/pesan', 'PesanController@index');
+Route::get('/order', 'OrderController@index');

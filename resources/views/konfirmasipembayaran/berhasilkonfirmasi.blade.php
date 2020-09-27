@@ -18,7 +18,13 @@
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
+    <!-- file -->
+    <script src="{{asset ('lte3/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
     <!-- Libraries CSS Files -->
     <link href="{{asset ('newbiz/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset ('newbiz/lib/animate/animate.min.css')}}" rel="stylesheet">
@@ -28,6 +34,26 @@
 
     <!-- Main Stylesheet File -->
     <link href="{{asset ('newbiz/css/style.css')}}" rel="stylesheet">
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{{asset ('lte3/plugins/fontawesome-free/css/all.min.css')}}">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="{{asset ('lte3/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{asset ('lte3/dist/css/adminlte.min.css')}}">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,57 +68,34 @@
                 <br>
                 <div class="container-fluid">
                     <div class="row mb-2">
-
-                        <h1 class="text-dark">Design Interior</h1>
-
-
+                        <h1 class="text-dark">Konfirmasi Pembayaran</h1>
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
             <!-- main -->
-            <div class="row mt-2 mb-2">
-
-
-                <div class="col-md-4">
-                    <img src="{{asset('uploads/').'/'.$produk->gambar }}" style="width: 350px; height: 350px; background-color: rgba(0,0,255,0.1);" alt="...">
-                    <label>Harga : Rp. {{$produk->harga}}</label>
-                    <label>Keterangan : {{$produk->diskripsi}}</label>
-
-                </div>
-
-                <div class="col-md-8">
-                    <div class="card card-outline card-info">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="card bg-success">
                         <div class="card-header">
-                            <h5 class="card-title">
-                                Pembayaran Desain
-                            </h5>
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="m-3">
-                            <label> <b>Terima kasih telah melakukan pemesanan</b></label>
-                            <br />
-                            <label> <b>No Order Kamu adalah</b></label>
-                            <br />
-                            <h5><b>{{$id_order}}</b></h5>
-                            <br />
-
-                            silahkan menyelesaikan order tersebut
-                            <br />
-                            Pembayaran dapat dilakukan melalui :
-                            <br />
-                            <b>BCA : 200300330</b>
-                            <br />
-                            <b>BRI : 16002929393939</b>
-
-                            <div>
+                            <h3 class="card-title"> Data Berhasil Dikirim
+                            </h3>
+                            <div class="card-tools">
 
                             </div>
-
-                            <a href="/konfirmasipembayaran" class="btn btn-primary mt-5">Konfirmasi Pembayaran</a>
+                            <!-- /.card-tools -->
                         </div>
-                    </div>
-                </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
 
+                            <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+                                Hubungi Lewat whatsapp
+                            </a>
+
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
             </div>
 
         </div>
@@ -143,32 +146,47 @@
             $('.textarea').summernote()
         })
     </script>
+    <script src="{{asset ('lte3/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
+
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="{{asset ('lte3/plugins/jquery/jquery.min.js')}}"></script>
+    <!-- Bootstrap -->
+    <script src="{{asset ('lte3/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <!-- overlayScrollbars -->
+    <script src="{{asset ('lte3/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{asset ('lte3/dist/js/adminlte.js')}}"></script>
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="{{asset ('lte3/dist/js/demo.js')}}"></script>
+
+    <!-- PAGE PLUGINS -->
+    <!-- jQuery Mapael -->
+    <script src="{{asset ('lte3/plugins/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+    <script src="{{asset ('lte3/plugins/raphael/raphael.min.js')}}"></script>
+    <script src="{{asset ('lte3/plugins/jquery-mapael/jquery.mapael.min.js')}}"></script>
+    <script src="{{asset ('lte3/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
+    <!-- ChartJS -->
+    <script src="{{asset ('lte3/plugins/chart.js/Chart.min.js')}}"></script>
+    <!-- file -->
+    <script src="{{asset ('lte3/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
+
+    <!-- PAGE SCRIPTS -->
+    <script src="{{asset ('lte3/dist/js/pages/dashboard.js')}}"></script>
+    <script src="{{asset ('lte3/dist/js/pages/dashboard2.js')}}"></script>
 
 </body>
 
 </html>
-
-
-<!-- <div class="flex-center position-ref full-height">
-  @if (Route::has('login'))
-      <div class="top-right links">
-          @auth
-              <a href="{{ url('/home') }}">Dashboard</a>
-          @else
-              <a href="{{ route('login') }}">Login</a>
-
-              @if (Route::has('register'))
-                  <a href="{{ route('register') }}">Register</a>
-              @endif
-          @endauth
-      </div>
-  @endif
-
-  <div class="content">
-      <div class="title m-b-md">
-          Selamat Datang
-      </div>
-
-     
-  </div>
-</div> -->

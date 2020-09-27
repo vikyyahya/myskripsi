@@ -32,32 +32,7 @@
 
 <body>
 
-    <header id="header" class="fixed-top">
-        <div class="container">
-
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="#intro" class="scrollto"><img src="{{asset('newbiz/img/logo.png')}}" alt="" class="img-fluid"></a>
-            </div>
-
-            <nav class="main-nav float-right d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="#intro">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#order">Order</a></li>
-
-                    <li><a href="#contact">Contact Us</a></li>
-
-
-
-                </ul>
-            </nav><!-- .main-nav -->
-
-        </div>
-    </header><!-- #header -->
+    @include('header_user')
 
     <!--==========================
     Intro Section
@@ -81,8 +56,8 @@
 
                 <div class="col-md-4">
                     <img src="{{asset('uploads/').'/'.$produk->gambar }}" style="width: 350px; height: 350px; background-color: rgba(0,0,255,0.1);" alt="...">
-                    <label>Harga :</label>
-                    <label>Keterangan : 3D,Gambar Denah,Gambar Tampak</label>
+                    <label>Harga : Rp. {{$produk->harga}}</label>
+                    <label>Keterangan : {{$produk->diskripsi}}</label>
 
                 </div>
 
@@ -92,21 +67,14 @@
                             <h5 class="card-title">
                                 Konsep Desain
                             </h5>
-                            <!-- tools box -->
-                            <!-- <div class="card-tools">
-                                <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-                                    <i class="fas fa-minus"></i></button>
-                                <button type="button" class="btn btn-tool btn-sm" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-                                    <i class="fas fa-times"></i></button>
-                            </div> -->
-                            <!-- /. tools -->
+
                         </div>
                         <!-- /.card-header -->
                         <form action="/design-interior/pembayaran/{{$produk->id}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body pad">
                                 <div class="mb-3">
-                                    <textarea name="konsep" class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                    <textarea name="konsep" class="textarea" placeholder="Tambahkan keterangan disini" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                 </div>
                                 <div class="ml-3">
                                     <input type="checkbox" class="form-check-input" value="">Dp Rp 200.000,00
@@ -134,79 +102,7 @@
     <!--==========================
     Footer
   ============================-->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h3>NewBiz</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                            proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-
-                        <div class="social-links">
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam
-                            illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase
-                            seza.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-        -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-    </footer><!-- #footer -->
-
+    @include('footer_user')
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- Uncomment below i you want to use a preloader -->
     <!-- <div id="preloader"></div> -->
@@ -248,28 +144,3 @@
 </body>
 
 </html>
-
-
-<!-- <div class="flex-center position-ref full-height">
-  @if (Route::has('login'))
-      <div class="top-right links">
-          @auth
-              <a href="{{ url('/home') }}">Dashboard</a>
-          @else
-              <a href="{{ route('login') }}">Login</a>
-
-              @if (Route::has('register'))
-                  <a href="{{ route('register') }}">Register</a>
-              @endif
-          @endauth
-      </div>
-  @endif
-
-  <div class="content">
-      <div class="title m-b-md">
-          Selamat Datang
-      </div>
-
-     
-  </div>
-</div> -->
