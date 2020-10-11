@@ -14,8 +14,7 @@
     <link href="{{asset ('newbiz/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
     <link href="{{asset ('newbiz/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -78,8 +77,8 @@
                     </li> -->
                     <li><a href="#contact">Contact Us</a></li>
 
-                   
-                   
+
+
                 </ul>
             </nav><!-- .main-nav -->
 
@@ -92,38 +91,38 @@
     <section id="services" class="clearfix">
         <div class="container">
             <div class="content-header">
-            <br>
+                <br>
                 <div class="container-fluid">
                     <div class="row mb-2">
-                       
-                            <h1 class="text-dark">Design Logo </h1>
-                       
-                       
+
+                        <h1 class="text-dark">Design Logo </h1>
+
+
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
             <div class="row mt-2 mb-2">
-            @foreach ($design_interior as $set) 
-            <div class="card ml-2 " style="width: 16rem">
-                    <img  src="{{asset('image/').'/'.$set }}" class="card-img-top" alt="...">
+                @foreach ($design_interior as $set)
+                <div class="card ml-2 " style="width: 16rem">
+                    <img src="{{asset('image/').'/'.$set }}" class="card-img-top" alt="...">
                     </img>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Pilih</a>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Pilih</a>
+                    </div>
                 </div>
-            @endforeach
+                @endforeach
 
             </div>
-           
+
         </div>
     </section>
     <!-- #intro -->
 
     <main id="main">
 
-      
+
 
     </main>
 
@@ -213,9 +212,9 @@
     <script src="{{asset ('newbiz/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/easing/easing.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/mobile-nav/mobile-nav.js')}}"></script>
-    <script src="{{asset ('nembiz/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset ('nembiz/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset ('nembiz/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/counterup/counterup.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/owlcarousel/owl.carousel.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/isotope/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/lightbox/js/lightbox.min.js')}}"></script>

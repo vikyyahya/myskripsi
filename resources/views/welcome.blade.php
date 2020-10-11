@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NewBiz Bootstrap Template</title>
+    <title>Pt Kreasi Artha Makmur.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -177,7 +177,7 @@
                         <img src="{{asset ('newbiz/img/artikel-extra-1.jpg')}}" class="img-fluid mb-4" alt="">
                     </div>
                     <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-                    <h3><a href="">Design Interior</a></h3>
+                        <h3><a href="">Design Interior</a></h3>
                         <p>
                             Pengertian desain interior atau interior desain adalah sebuah hal yang berkenana dengan bidang kreatif
                             beserta solusi-solusi teknis yang diterapkan kedalam struktur yang dibangun.
@@ -200,7 +200,7 @@
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                    <h3><a href="">Design Logo & Branding</a></h3>
+                        <h3><a href="">Design Logo & Branding</a></h3>
                         <p>
                             Design logo sangat berpengaruh pada branding suatu produk,
                             maka dari itu, buatlah logo perusahaan Anda dengan sangat bagus sehingga bukan hanya mudah diingat,
@@ -794,7 +794,7 @@
                     <div class="col-lg-4 col-md-6 footer-info">
                         <h3>Kreasi Artha Makmur</h3>
                         <p>Memberikan solusi mudah dan cepat kepada anda yang membutuhkan design rumah atau usaha anda. Dengan memesan
-                        design secara online dapat memberikan efisiensi waktu. Anda jug adapat berkomunikasi langsung via chat online.</p>
+                            design secara online dapat memberikan efisiensi waktu. Anda jug adapat berkomunikasi langsung via chat online.</p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
@@ -865,9 +865,9 @@
     <script src="{{asset ('newbiz/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/easing/easing.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/mobile-nav/mobile-nav.js')}}"></script>
-    <script src="{{asset ('nembiz/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset ('nembiz/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset ('nembiz/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset ('newbiz/lib/counterup/counterup.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/owlcarousel/owl.carousel.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/isotope/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset ('newbiz/lib/lightbox/js/lightbox.min.js')}}"></script>
