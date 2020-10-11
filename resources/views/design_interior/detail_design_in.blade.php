@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NewBiz Bootstrap Template</title>
+    <title>Pt Kreasi Artha Makmur</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -44,7 +44,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
 
-                        <h1 class="text-dark">Design Interior</h1>
+                        <h1 class="text-dark">{{$type}}</h1>
 
 
                     </div><!-- /.row -->
@@ -52,7 +52,6 @@
             </div>
             <!-- main -->
             <div class="row mt-2 mb-2">
-
 
                 <div class="col-md-4">
                     <img src="{{asset('uploads/').'/'.$produk->gambar }}" style="width: 350px; height: 350px; background-color: rgba(0,0,255,0.1);" alt="...">
@@ -69,7 +68,7 @@
                             </h5>
 
                         </div>
-                        <!-- /.card-header -->
+                        <!-- /.card-header 'checkbox' =>'accepted' -->
                         <form action="/design-interior/pembayaran/{{$produk->id}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body pad">
@@ -77,7 +76,7 @@
                                     <textarea name="konsep" class="textarea" placeholder="Tambahkan keterangan disini" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                 </div>
                                 <div class="ml-3">
-                                    <input type="checkbox" class="form-check-input" value="">Dp Rp 200.000,00
+                                    <input required type="checkbox" name="checkbox" class="form-check-input" value="">Dp Rp 200.000,00
                                 </div>
                                 <label>Centang untuk melanjutkan pemesanan</label>
                             </div>

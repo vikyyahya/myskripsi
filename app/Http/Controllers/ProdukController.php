@@ -36,6 +36,7 @@ class ProdukController extends Controller
             'title' => 'required',
             'diskripsi' => 'required',
             'type' => 'required',
+            'harga' => 'required',
             'file' => 'required|max:2048',
         ]);
         $nama_produk = str_replace(' ', '_', $request->nama_produk);
@@ -49,6 +50,7 @@ class ProdukController extends Controller
             'title' => $data['title'],
             'diskripsi' => $data['diskripsi'],
             'type' => $data['type'],
+            'harga' => $data['harga'],
             'gambar' => $fileName,
         ]);
         return redirect('/produk')->with('sukses', 'Data Berhasil Di Upload!');

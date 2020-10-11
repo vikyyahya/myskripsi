@@ -43,7 +43,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
 
-                        <h1 class="text-dark">Design Interior</h1>
+                        <h1 class="text-dark">{{$type}}</h1>
 
 
                     </div><!-- /.row -->

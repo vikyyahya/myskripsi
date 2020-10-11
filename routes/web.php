@@ -22,7 +22,7 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
     //design interior
     Route::get('/design-interior', 'DesignInteriorController@index');
-    Route::get('/design-interior/detail/{id}', 'DesignInteriorController@detail');
+    Route::get('/produk/detail/{id}', 'DesignInteriorController@detail');
     Route::post('/design-interior/pembayaran/{id}', 'DesignInteriorController@pembayaran');
 
     //design exterior

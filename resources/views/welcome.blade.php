@@ -293,7 +293,6 @@
                                 <h5 class="card-title">Estimasi Biaya Terjangkau</h5>
                                 <p class="card-text">Sebelum anda memilih order, anda akan ditampilkan estimasi biaya yang anda butuhkan,
                                     ini dapat membatu anda untuk mempersiapkan dana dengan hasil yang diinginkan.</p>
-                                <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
                     </div>
@@ -304,7 +303,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">Koperatif</h5>
                                 <p class="card-text">Komunikasi yang mudah dapat mempermudah anda untuk menuangkan ide yang diinginkan.</p>
-                                <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
                     </div>
@@ -316,7 +314,6 @@
                                 <h5 class="card-title">Mengubah Design</h5>
                                 <p class="card-text">Gambar visualisasi itu sangat penting.
                                     karena dengan gambar visualisasi yang realistik anda dapat mengetahui seperti apa desain eksterior atau interior rumah anda.. </p>
-                                <a href="#" class="readmore">Read more </a>
                             </div>
                         </div>
                     </div>

@@ -31,28 +31,33 @@
 						<input type="text" name="title" placeholder="" class="form-control">
 					</div>
 
-                    <div class="form-group">
+					<div class="form-group">
 						<label>Diskripsi</label>
 						<input type="text" name="diskripsi" placeholder="" class="form-control">
 					</div>
 
-                    <div class="form-group">
+					<div class="form-group">
+						<label>Harga</label>
+						<input type="number" name="harga" placeholder="" class="form-control">
+					</div>
+
+					<div class="form-group">
 						<label>Type</label>
 						{{ Form::select('type', $type, null, ['placeholder' => 'Pilih Type..', 'required', 'class' => 'form-control']) }}
 					</div>
 
-                    <div class="form-group">
-                        <label>Gambar</label>
+					<div class="form-group">
+						<label>Gambar</label>
 
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile" name="file">
-                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                            </div>
-                          
-                        </div>
+						<div class="input-group">
+							<div class="custom-file">
+								<input type="file" class="custom-file-input" id="exampleInputFile" name="file">
+								<label class="custom-file-label" for="exampleInputFile">Choose file</label>
+							</div>
 
-                    </div>
+						</div>
+
+					</div>
 
 					<div class="card-footer">
 

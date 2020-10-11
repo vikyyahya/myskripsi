@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NewBiz Bootstrap Template</title>
+    <title>PT Kreasi Artha Makmur</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -59,7 +59,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$set->title}}</h5>
                         <p class="card-text">{{$set->diskripsi}}</p>
-                        <a href="/design-interior/detail/{{$set->id}}" class="btn btn-primary">Pilih</a>
+                        <a href="/produk/detail/{{$set->id}}" class="btn btn-primary">Pilih</a>
                     </div>
                 </div>
                 @endforeach

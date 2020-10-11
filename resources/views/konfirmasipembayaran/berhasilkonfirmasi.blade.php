@@ -72,9 +72,9 @@
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
-            <!-- main -->
-            <div class="col-md-12">
-                <div class="col-md-3">
+
+            <div class="row">
+                <div class="col">
                     <div class="card bg-success">
                         <div class="card-header">
                             <h3 class="card-title"> Data Berhasil Dikirim
@@ -86,17 +86,23 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-
-                            <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+                            <h3 class="card-title"> Bukti pembayaran anda berhasil dikirim dan akan segera kami proses
+                            </h3>
+                            </br>
+                            <h3 class="card-title">Terimakasih</h3>
+                            </br>
+                            <a class="card-tools" href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
                                 Hubungi Lewat whatsapp
                             </a>
 
                         </div>
                         <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
                 </div>
             </div>
+            <!-- main -->
+
+            <!-- /.card -->
 
         </div>
     </section>

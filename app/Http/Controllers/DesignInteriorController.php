@@ -7,6 +7,9 @@ use App\Produk;
 use App\Order;
 use Illuminate\Support\Facades\Auth;
 
+use App\Mail\SendEmail;
+use Illuminate\Support\Facades\Mail;
+
 class DesignInteriorController extends Controller
 {
     //
@@ -26,8 +29,8 @@ class DesignInteriorController extends Controller
         $design_interior = ["design_interior1.jpeg", "design_interior2.jpeg", "design_interior3.jpeg", "design_interior4.jpeg"];
 
         $produk = Produk::find($id);
-
-        return view('design_interior.detail_design_in', ['produk' => $produk]);
+        $type = $produk->type;
+        return view('design_interior.detail_design_in', ['produk' => $produk, 'type' => $type]);
     }
 
     public function pembayaran(Request $request, $id)
@@ -43,15 +46,9 @@ class DesignInteriorController extends Controller
         $order->status_pembayaran = false;
         $order->keterangan = $request->konsep;
         $order->save();
+        $type = $produk->type;
+        Mail::to(Auth::user()->email)->send(new SendEmail($order->id));
 
-        // Order::create([
-        //     'id_produk' => $produk->id,
-        //     'id_user' => Auth::user()->id,
-        //     'status_pembayaran' => false,
-        //     'keterangan' => $request->konsep
-        // ]);
-
-
-        return view('design_interior.pembayaran_des_in', ['produk' => $produk, 'id_order' => $order->id]);
+        return view('design_interior.pembayaran_des_in', ['produk' => $produk, 'id_order' => $order->id, 'type' => $type]);
     }
 }
