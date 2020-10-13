@@ -10,7 +10,7 @@
         <nav class="main-nav float-right d-none d-lg-block">
             <ul>
                 <li class="active"><a href="/">Home</a></li>
-                <li class="active"><a href="/">My Order</a></li>
+                <li class="active"><a href="/myorder">My Order</a></li>
                 @if (Route::has('login'))
                 @auth
                 @if (Auth::user()->level == 1)

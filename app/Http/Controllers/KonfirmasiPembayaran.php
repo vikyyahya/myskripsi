@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 
+use App\Mail\EmailKonfirmationPembayaran;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
+
+
+
 
 class KonfirmasiPembayaran extends Controller
 {
@@ -31,6 +37,7 @@ class KonfirmasiPembayaran extends Controller
         $produk->bukti_pembayaran = $fileName;
         $produk->save();
         $request->file->move(public_path('uploads'), $fileName);
+        Mail::to(Auth::user()->email)->send(new EmailKonfirmationPembayaran($request->id));
 
         return view('konfirmasipembayaran.berhasilkonfirmasi');
     }

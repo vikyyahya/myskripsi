@@ -50,6 +50,7 @@ Route::post('/createproduk', 'ProdukController@create');
 Route::post('/updateproduk/{id}', 'ProdukController@update');
 Route::get('/ubahproduk/{id}', 'ProdukController@tampilubah');
 Route::get('/hapusproduk/{id}', 'ProdukController@delete');
+Route::get('/admin/konfirmasi/{id}', 'OrderController@konfirmasi');
 
 //user
 Route::get('/users', 'UserController@user');
@@ -62,4 +63,7 @@ Route::get('/users/cari', 'UserController@cari');
 
 //Pesan
 Route::get('/pesan', 'PesanController@index');
+
+//order
 Route::get('/order', 'OrderController@index');
+Route::get('/myorder', 'OrderController@myOrder');

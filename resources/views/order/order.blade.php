@@ -49,6 +49,7 @@
                     <th class="text-center">User</th>
                     <th class="text-center">Produk</th>
                     <th class="text-center">Keterangan</th>
+                    <th class="text-center">Dokumen</th>
                     <th class="text-center">Status Pembayaran</th>
                     <th class="text-center" width="8%">Action</th>
                 </tr>
@@ -57,23 +58,36 @@
                 @foreach($users ?? '' as $s)
                 <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{$s->id_user}}</td>
-                    <td>{{$s->id_produk}}</td>
+                    <td>{{$s->users->name}}</td>
+                    <td>{{$s->produks->nama_produk}}</td>
                     <td>{{$s->keterangan}}</td>
-                    <td>{{$s->status_pembayaran}}</td>
+                    <td>
+                        <img style="width:50px;height:50px;" class="img-fluid" src="{{ URL::to('/') }}/uploads/{{$s->bukti_pembayaran}}">
+                        <a href="{{ URL::to('/') }}/uploads/{{$s->bukti_pembayaran}}"> lihat</a>
+                    </td>
+                    @if ($s->status_pembayaran == '1')
+                    <td>
+                        <p class="text-success">Terkonfirmasi</p>
+                    </td>
                     <td>
                         <div class="btn-group">
-
+                            <a href="/admin/konfirmasi/{{$s->id}}" class="btn btn-danger  btn-sm" data-toggle="tootip" data-placement="bottom" title="Edit">
+                                Batal Konfirmasi
+                            </a>
+                        </div>
+                    </td>
+                    </td>
+                    @else
+                    <td>Belum Terkonfirmasi</td>
+                    <td>
+                        <div class="btn-group">
                             <a href="/admin/konfirmasi/{{$s->id}}" class="btn btn-primary  btn-sm" data-toggle="tootip" data-placement="bottom" title="Edit">
                                 konfirmasi
                             </a>
-
-                            <!-- <a onClick="return confirm('Yakin ingin menghapus data?')" href="/user/{{$s->id}}/delete" class="btn btn btn-danger btn-sm">
-                                <i class="fa fa-trash nav-icon"></i>
-                            </a> -->
-
                         </div>
                     </td>
+                    @endif
+
 
                 </tr>
                 @endforeach
