@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\EmailBerhasilKonfirmasi;
+use Illuminate\Support\Facades\Mail;
 use App\Order;
 
 use Illuminate\Support\Facades\Auth;
@@ -24,10 +26,11 @@ class OrderController extends Controller
     public function konfirmasi($id)
     {
         $user = Order::find($id);
-        if ($user->status_pembayaran == 1) {
-            $user->status_pembayaran = 0;
+        if ($user->status_pembayaran == '1') {
+            $user->status_pembayaran = '0';
         } else {
-            $user->status_pembayaran = 1;
+            $user->status_pembayaran = '1';
+            Mail::to(Auth::user()->email)->send(new EmailBerhasilKonfirmasi($id));
         }
         $user->save();
         return redirect('/order')->with('sukses', 'Data berhasil di konfirmasi!');
