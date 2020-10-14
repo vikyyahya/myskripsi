@@ -26,7 +26,7 @@
 <div class="card m-3" style="border-top: 2px solid">
 
     <div class="card-header ">
-        <h4>Order</h4>
+        <h4>Report</h4>
         <div class="card-tools mr-1">
             <form action="/users/cari" method="GET">
                 @csrf
@@ -52,7 +52,6 @@
                     <th class="text-center">Dokumen</th>
                     <th class="text-center">Progres</th>
                     <th class="text-center">Status Pembayaran</th>
-                    <th class="text-center" width="8%">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,33 +65,18 @@
                         <img style="width:50px;height:50px;" class="img-fluid" src="{{ URL::to('/') }}/uploads/{{$s->bukti_pembayaran}}">
                         <a href="{{ URL::to('/') }}/uploads/{{$s->bukti_pembayaran}}"> lihat</a>
                     </td>
-                    <th class="text-center">{{$s->progress}} </br>
-                        <a href="/tampilupdateprogres/{{$s->id}}">update</a>
-                    </th>
+                    <th class="text-center">{{$s->progress}}</th>
 
                     @if ($s->status_pembayaran == '1')
                     <td>
                         <p class=" text-success">Terkonfirmasi</p>
                     </td>
-                    <td>
-                        <div class="btn-group">
-                            <a href="/admin/konfirmasi/{{$s->id}}" class="btn btn-danger  btn-sm" data-toggle="tootip" data-placement="bottom" title="Edit">
-                                Batal Konfirmasi
-                            </a>
-                        </div>
-                    </td>
+
                     </td>
                     @else
                     <td>Belum Terkonfirmasi</td>
-                    <td>
-                        <div class="btn-group">
-                            <a href="/admin/konfirmasi/{{$s->id}}" class="btn btn-primary  btn-sm" data-toggle="tootip" data-placement="bottom" title="Edit">
-                                konfirmasi
-                            </a>
-                        </div>
-                    </td>
-                    @endif
 
+                    @endif
 
                 </tr>
                 @endforeach
@@ -106,28 +90,4 @@
     </div>
 </div>
 
-<div class="modal fade" id="importExcela" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <form method="post" action="/updateprogres" enctype="multipart/form-data">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Update Progress</h5>
-                </div>
-                <div class="modal-body">
-
-                    {{ csrf_field() }}
-
-
-                    <label>Progress :</label>
-                    <input type="number" name="progress" required="required">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Update</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 @endsection

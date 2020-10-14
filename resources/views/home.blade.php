@@ -87,6 +87,7 @@
     });
   </script>
 
+
   <!-- PAGE SCRIPTS -->
   <script src="{{asset ('lte3/dist/js/pages/dashboard.js')}}"></script>
   <script src="{{asset ('lte3/dist/js/pages/dashboard2.js')}}"></script>

@@ -35,4 +35,23 @@ class OrderController extends Controller
         $user->save();
         return redirect('/order')->with('sukses', 'Data berhasil di konfirmasi!');
     }
+
+    public function report()
+    {
+        $users = Order::where('progress', '100%')->paginate(5);
+        return view('order.report', ['users' => $users]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $order = Order::find($id);
+        $order->update($request->all());
+        return redirect('/order')->with('sukses', 'Data Berhasil Di Update!');
+    }
+
+    public function tampilupdate($id)
+    {
+        $users = Order::find($id);
+        return view('order.updateorder', ['order' => $users]);
+    }
 }

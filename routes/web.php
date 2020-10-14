@@ -67,3 +67,6 @@ Route::get('/pesan', 'PesanController@index');
 //order
 Route::get('/order', 'OrderController@index');
 Route::get('/myorder', 'OrderController@myOrder');
+Route::get('/report', 'OrderController@report');
+Route::get('/tampilupdateprogres/{id}', 'OrderController@tampilupdate');
+Route::post('/updateprogres/{id}', 'OrderController@update');

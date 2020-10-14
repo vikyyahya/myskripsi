@@ -61,15 +61,15 @@
           </a>
         </li>
 
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link">
+        <li class="nav-item">
+          <a href="/report" class="nav-link">
             <i class="nav-icon fas fa-info-circle"></i>
             <p>
               Report
               <span class="right badge badge-danger"></span>
             </p>
           </a>
-        </li> -->
+        </li>
 
         <!-- <li class="nav-item">
           <a href="#" class="nav-link">
