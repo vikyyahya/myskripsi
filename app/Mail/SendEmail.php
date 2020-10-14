@@ -35,7 +35,7 @@ class SendEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('bengkelinsaja@gmail.com')
+        return $this->from('adm.kreasiam@gmail.com')
             ->view('emailku')
             ->with(
                 [
