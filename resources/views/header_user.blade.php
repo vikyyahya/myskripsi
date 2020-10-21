@@ -11,6 +11,7 @@
             <ul>
                 <li class="active"><a href="/">Home</a></li>
                 <li class="active"><a href="/myorder">My Order</a></li>
+                <li class="active"><a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202.">Whatapps</a></li>
                 @if (Route::has('login'))
                 @auth
                 @if (Auth::user()->level == 1)

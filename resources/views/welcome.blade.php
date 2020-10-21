@@ -48,7 +48,7 @@
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="#intro" class="scrollto"><img src="{{asset('newbiz/img/logo.png')}}" alt="" class="img-fluid"></a>
+                <img src="{{asset('newbiz/img/logo.png')}}" alt="" style="width: 100px; height: 200px">
             </div>
 
             <nav class="main-nav float-right d-none d-lg-block">
